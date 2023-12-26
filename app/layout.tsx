@@ -9,7 +9,6 @@ import { CartProvider } from "@/utils/CartContext";
 export const metadata = {
   title: "Online Store",
   description: "Your next shopping mall",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
