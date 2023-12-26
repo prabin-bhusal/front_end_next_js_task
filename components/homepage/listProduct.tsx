@@ -6,15 +6,17 @@ import ProductCard from "./productCard";
 import { useQuery } from "react-query";
 
 interface Product {
-  id: Number;
-  title: String;
-  price: Number;
-  description: String;
-  category: String;
-  image: String;
-  rating: Object;
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
 }
-
 export default function ListProduct() {
   const { data, isLoading } = useQuery<Product[]>({
     queryKey: ["products"],
