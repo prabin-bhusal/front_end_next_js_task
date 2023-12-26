@@ -23,8 +23,8 @@ const ProductCard = (props: { product: Product }) => {
     addToCart(product);
   };
   return (
-    <div className="col-md-4 mt-2">
-      <div className="card">
+    <div className="col-md-4 mt-4">
+      <div className="card h-100">
         <div className="card-body">
           <div className="card-img-actions product-card">
             <Image
@@ -51,13 +51,6 @@ const ProductCard = (props: { product: Product }) => {
           </div>
 
           <h3 className="">Rs.{props.product?.price.toString()}</h3>
-
-          <div>
-            <i className="fa fa-star star"></i>
-            <i className="fa fa-star star"></i>
-            <i className="fa fa-star star"></i>
-            <i className="fa fa-star star"></i>
-          </div>
 
           {/* <div className="text-muted mb-3">
             {props.product.rating.count}

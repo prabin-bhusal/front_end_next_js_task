@@ -44,7 +44,7 @@ function TopNav() {
                 Home
               </Nav.Link>
             </Link>
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <Link href="/products" style={{ textDecoration: "none" }}>
               <Nav.Link href="/" className="nav-link-custom">
                 View Products
               </Nav.Link>
