@@ -1,6 +1,7 @@
 "use client";
 
 import { useCart } from "@/utils/CartContext";
+import Head from "next/head";
 import Image from "next/image";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { useQuery } from "react-query";
@@ -43,6 +44,13 @@ export default function Page({ params }: { params: { slug: string } }) {
     );
   return (
     <>
+      <Head>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+      </Head>
+
       <div className="product-container bg-white py-5">
         <Container>
           <Row className="py-4">
