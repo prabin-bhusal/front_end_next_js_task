@@ -41,11 +41,13 @@ export const useCart = () => {
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cart, setCart] = useState<Item[]>(() => {
     const storedCart = localStorage.getItem(CART_STORAGE_KEY);
-    return storedCart ? JSON.parse(storedCart) : []; // Initialize with localStorage data or empty array
+    return storedCart ? JSON.parse(storedCart) : [];
   });
 
   useEffect(() => {
-    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    if (typeof window !== "undefined") {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    }
   }, [cart]);
 
   const viewFromCart = () => {
