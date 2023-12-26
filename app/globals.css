@@ -24,9 +24,6 @@
   margin: 0;
 }
 
-html {
-  font-size: 16px;
-}
 body {
   max-width: 100vw;
 }
@@ -39,53 +36,51 @@ body {
   color: var(--tertiary-color);
   background-color: var(--primary-color) !important;
   font-family: var(--font-primary);
-  font-size: 2rem;
 }
 
-ul,
+/* ul,
 li {
   font-size: 2rem;
-}
+} */
 
 h1 {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 4.4rem;
+  font-size: 2.4rem;
   line-height: 1.5;
 }
 
 h2 {
   font-family: var(--font-subheading);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 
 h3 {
   font-family: var(--font-subheading);
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 1.6rem;
   line-height: 1.3;
 }
 
 h4 {
   font-family: var(--font-subheading);
   font-weight: 600;
-  font-size: 3.2rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
 h5 {
   font-family: var(--font-subheading);
   font-weight: 600;
-  font-size: 2.8rem;
+
   line-height: 1.1;
 }
 
 h6 {
   font-family: var(--font-subheading);
   font-weight: 500;
-  font-size: 2.4rem;
 }
 
 a {
@@ -178,7 +173,7 @@ a {
   line-height: 1.3;
   word-spacing: 1.9px;
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .hero-section h1 span {
