@@ -45,9 +45,47 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Head>
+        <title>{data.title} | OnlineStore</title>
+        <meta name="description" content={data.description} />
+        <meta name="author" content="OnlineStore" />
+        <meta
+          name="keywords"
+          content={`${data.category}, ${data.title}, online store, shopping, ecommerce`}
+        />
+        <meta name="robots" content="index, follow" />
+
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+        <link
+          rel="canonical"
+          href={`https://yourwebsite.com/product/${params.slug}`}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: data.title,
+              description: data.description,
+              image: data.image,
+              url: `https://yourwebsite.com/product/${params.slug}`,
+              category: data.category,
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "NPR",
+                price: data.price.toString(),
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: data.rating.rate.toString(),
+                reviewCount: data.rating.count.toString(),
+              },
+            }),
+          }}
         />
       </Head>
 

@@ -1,11 +1,10 @@
 "use client";
 
 import ProductListCard from "@/components/product/ProductListCard";
-import Image from "next/image";
+import Head from "next/head";
 import React, { useMemo, useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
 import { useQuery } from "react-query";
-import StarRatings from "react-star-ratings";
 
 const categories = [
   "electronics",
@@ -121,16 +120,89 @@ export default function ProductsPage() {
   ));
 
   return (
-    <main
-      className="products-section bg-white py-4 "
-      style={{ minHeight: "100vh" }}
-    >
-      <Container>
-        <Row>
-          <div className="col-md-3 col-sm-12">{filters}</div>
-          <div className="col-lg-9 col-12">{productList}</div>
-        </Row>
-      </Container>
-    </main>
+    <>
+      <Head>
+        <title>Products | OnlineStore</title>
+        <meta
+          name="description"
+          content="Browse our wide range of products at OnlineStore."
+        />
+        <meta name="author" content="Online Store" />
+        <meta
+          name="keywords"
+          content="products, online store, shopping, ecommerce"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Products | OnlineStore" />
+        <meta
+          property="og:description"
+          content="Browse our wide range of products at OnlineStore."
+        />
+        <link rel="canonical" href={`https://yourwebsite.com/products`} />
+        <meta
+          property="og:image"
+          content="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://front-end-next-js-task.vercel.app/products"
+        />
+
+        {/* Twitter */}
+        <meta
+          property="twitter:card"
+          content="Buy clothes, electronics in onlinestore."
+        />
+        <meta property="twitter:title" content="Products | OnlineStore" />
+        <meta
+          property="twitter:description"
+          content="Browse our wide range of products at OnlineStore."
+        />
+        <meta
+          property="twitter:image"
+          content="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+        />
+
+        {/* Structured Data - Product Listing */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              itemListElement: filteredData.map((product, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                item: {
+                  "@type": "Product",
+                  name: product.title,
+                  description: product.description,
+                  image: product.image,
+                  url: `https://front-end-next-js-task.vercel.app//product/${product.id}`,
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "NPR",
+                    price: product.price.toString(),
+                  },
+                },
+              })),
+            }),
+          }}
+        />
+      </Head>
+      <main
+        className="products-section bg-white py-4 "
+        style={{ minHeight: "100vh" }}
+      >
+        <Container>
+          <Row>
+            <div className="col-md-3 col-sm-12">{filters}</div>
+            <div className="col-lg-9 col-12">{productList}</div>
+          </Row>
+        </Container>
+      </main>
+    </>
   );
 }

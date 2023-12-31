@@ -8,9 +8,20 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>OnlineStore - Home</title>
         <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+          name="description"
+          content="Welcome to OnlineStore - your ultimate destination for shopping."
+        />
+        <meta name="author" content="OnlineStore" />
+        <meta
+          name="keywords"
+          content="online store, shopping, ecommerce, home products"
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://front-end-next-js-task.vercel.app/"
         />
       </Head>
 
