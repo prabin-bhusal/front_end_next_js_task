@@ -39,11 +39,11 @@ const ProductCard = (props: { product: Product }) => {
 
         <div className="card-body bg-light text-center">
           <div className="mb-2">
-            <h6 className="font-weight-semibold mb-2">
+            <p className="font-weight-semibold mb-2">
               <a href="#" className="text-default mb-2" data-abc="true">
                 {props.product?.title}
               </a>
-            </h6>
+            </p>
 
             <a href="#" className="text-muted" data-abc="true">
               {props.product?.category}
