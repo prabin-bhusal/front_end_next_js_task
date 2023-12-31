@@ -1,1 +1,113 @@
-{"@context":"http://www.sitemaps.org/schemas/sitemap/0.9","@type":"UrlSet","url":[{"loc":"https://yourwebsite.com/","lastmod":"2023-12-31","changefreq":"daily"},{"loc":"https://yourwebsite.com/products","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/1","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/2","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/3","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/4","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/5","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/6","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/7","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/8","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/9","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/10","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/11","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/12","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/13","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/14","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/15","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/16","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/17","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/18","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/19","lastmod":"2023-12-31","changefreq":"daily"},{"url":"https://yourwebsite.com/product/20","lastmod":"2023-12-31","changefreq":"daily"}]}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+      <loc>https://front-end-next-js-task.vercel.app/</loc>
+      <lastmod>2023-12-31</lastmod>
+      <changefreq>daily</changefreq>
+    </url>
+<url>
+      <loc>https://front-end-next-js-task.vercel.app/products</loc>
+      <lastmod>2023-12-31</lastmod>
+      <changefreq>daily</changefreq>
+    </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/1</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/2</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/3</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/4</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/5</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/6</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/7</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/8</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/9</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/10</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/11</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/12</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/13</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/14</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/15</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/16</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/17</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/18</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/19</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+<url>
+        <loc>https://front-end-next-js-task.vercel.app/20</loc>
+        <lastmod>2023-12-31</lastmod>
+        <changefreq>daily</changefreq>
+      </url>
+</urlset>

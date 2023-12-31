@@ -8,7 +8,7 @@ const generateProductUrls = async () => {
     );
 
     return products.map((product) => ({
-      url: `https://yourwebsite.com/product/${product.id}`,
+      url: `https://front-end-next-js-task.vercel.app/${product.id}`,
       lastmod: "2023-12-31",
       changefreq: "daily",
     }));
@@ -19,27 +19,40 @@ const generateProductUrls = async () => {
 };
 
 const generateSitemap = async () => {
-  const productUrls = await generateProductUrls();
+  try {
+    const productUrls = await generateProductUrls();
 
-  const sitemapData = {
-    "@context": "http://www.sitemaps.org/schemas/sitemap/0.9",
-    "@type": "UrlSet",
-    url: [
-      {
-        loc: "https://yourwebsite.com/",
-        lastmod: "2023-12-31",
-        changefreq: "daily",
-      },
-      {
-        loc: "https://yourwebsite.com/products",
-        lastmod: "2023-12-31",
-        changefreq: "daily",
-      },
-      ...productUrls,
-    ],
-  };
+    let sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+    sitemapXML += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
-  fs.writeFileSync("./public/sitemap.xml", JSON.stringify(sitemapData));
+    // Add URLs to sitemap
+    sitemapXML += `<url>
+      <loc>https://front-end-next-js-task.vercel.app/</loc>
+      <lastmod>2023-12-31</lastmod>
+      <changefreq>daily</changefreq>
+    </url>\n`;
+
+    sitemapXML += `<url>
+      <loc>https://front-end-next-js-task.vercel.app/products</loc>
+      <lastmod>2023-12-31</lastmod>
+      <changefreq>daily</changefreq>
+    </url>\n`;
+
+    // Add product URLs
+    productUrls.forEach((product) => {
+      sitemapXML += `<url>
+        <loc>${product.url}</loc>
+        <lastmod>${product.lastmod}</lastmod>
+        <changefreq>${product.changefreq}</changefreq>
+      </url>\n`;
+    });
+
+    sitemapXML += `</urlset>`;
+
+    fs.writeFileSync("./public/sitemap.xml", sitemapXML);
+  } catch (error) {
+    console.error("Error generating sitemap:", error);
+  }
 };
 
 generateSitemap();
